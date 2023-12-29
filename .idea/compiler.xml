@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Parcel-Discovery-Service" />
+        <module name="Parcel-Notification-Service" />
+        <module name="Parcel" />
+        <module name="Parcel-Gateway-Service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Parcel" options="-parameters" />
+      <module name="Parcel-Discovery-Service" options="-parameters" />
+      <module name="Parcel-Gateway-Service" options="-parameters" />
+      <module name="Parcel-Notification-Service" options="-parameters" />
+    </option>
+  </component>
+</project>
