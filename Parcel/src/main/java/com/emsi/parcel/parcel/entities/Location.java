@@ -18,9 +18,10 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-    @JsonIgnore
+
     @ManyToOne
     @JoinColumn(name = "parcel_id", nullable = false)
+    @JsonIgnore
     private Parcel parcel;
 
     private String locationDescription;

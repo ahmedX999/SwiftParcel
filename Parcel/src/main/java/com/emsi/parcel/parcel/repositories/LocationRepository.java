@@ -11,4 +11,5 @@ import java.util.List;
 public interface LocationRepository extends JpaRepository<Location,Long> {
 
     List<Location> findByParcelOrderByTimestampDesc(Parcel parcel);
+    Location findByParcel_Id (Long id);
 }

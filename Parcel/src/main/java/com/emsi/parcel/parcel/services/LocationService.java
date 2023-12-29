@@ -18,10 +18,20 @@ public class LocationService {
     }
 
     public Location saveLocation(Location location) {
+
         return locationRepository.save(location);
     }
 
     public List<Location> getLocationHistory(Parcel parcel) {
         return locationRepository.findByParcelOrderByTimestampDesc(parcel);
     }
+
+    public void deleteById(Long aLong) {
+        locationRepository.deleteById(aLong);
+    }
+
+    public List<Location> getAllLocationHistory() {
+        return locationRepository.findAll();
+    }
+
 }
