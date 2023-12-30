@@ -32,6 +32,10 @@ public class ParcelService {
         parcelRepository.deleteById(aLong);
     }
 
+    public Optional<Parcel> getParcelById(Long aLong) {
+        return parcelRepository.findById(aLong);
+    }
+
     @Transactional
     public void updateStatus(Long parcelId, String newStatus) {
         Optional<Parcel> optionalParcel = parcelRepository.findById(parcelId);
