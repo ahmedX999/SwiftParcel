@@ -2,18 +2,18 @@ package com.emsi.parcel.parcel.services;
 
 import com.emsi.parcel.parcel.entities.Parcel;
 import com.emsi.parcel.parcel.repositories.ParcelRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
+@RequiredArgsConstructor
 @Service
 public class ParcelService {
-    @Autowired
-    ParcelRepository parcelRepository;
+
+    private final ParcelRepository parcelRepository;
 
 
     public Parcel saveParcel(Parcel parcel) {
@@ -45,7 +45,11 @@ public class ParcelService {
             parcel.setStatus(newStatus);
             parcelRepository.save(parcel);
         } else {
-            return;
+            // Handle the case when the parcel is not found
+            // You can throw an exception or return a default value
+            // For example, returning a default value or throwing an exception
+            throw new IllegalArgumentException("Parcel not found");
+
         }
     }
 

@@ -13,10 +13,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Parcel</name>
     <description>Parcel</description>
+
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <sonar.organization>sonark</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -93,7 +97,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
+       
 
     </dependencies>
     <dependencyManagement>
