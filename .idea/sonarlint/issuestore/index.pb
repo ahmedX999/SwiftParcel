@@ -83,3 +83,5 @@ iParcel-Gateway-Service/src/main/java/com/emsi/Parcel/Gateway/Service/ParcelGate
 ^Parcel-Notification-Service/src/main/java/com/emsi/Parcel/Notification/Service/beans/User.java,1\4\14f70873b159ae3b0d12e4ccf3d2ed24e781a1db
 ™
 iParcel-Notification-Service/src/main/java/com/emsi/Parcel/Notification/Service/services/EmailService.java,9\8\984946e6373220ea63c45fcf00186b18c0eb119c
+~
+NParcel/src/main/java/com/emsi/parcel/parcel/repositories/ParcelRepository.java,b\4\b4075d6cce5fe1d1a82e21830fc00ba9ef1c2e34

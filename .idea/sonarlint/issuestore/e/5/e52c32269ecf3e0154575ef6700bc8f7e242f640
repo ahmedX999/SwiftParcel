@@ -1,11 +1,11 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¥»Û8íä¼µÌ1J$268cedbf-f60f-44ca-8d7e-c11d0e0c94c2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–¥»Û8úŸåÙÌ1J$66b57ec6-cdbc-408c-a92d-3a979b44ed53
 ‡
-java:S1226"?Introduce a new variable instead of reusing the parameter "to".(†úµ—ûÿÿÿÿ8ğä¼µÌ1J$7085b655-e3a6-4248-8388-ca524123214a
+java:S1226"?Introduce a new variable instead of reusing the parameter "to".(†úµ—ûÿÿÿÿ8üŸåÙÌ1J$12160445-45c7-45d3-b7f4-e98a8f33a664
 Œ
-java:S1226"DIntroduce a new variable instead of reusing the parameter "subject".(õûÄøÿÿÿÿ8Èç¾µÌ1J$a3d1ddf9-ae56-4133-8755-f146ddcfb18c
+java:S1226"DIntroduce a new variable instead of reusing the parameter "subject".(õûÄøÿÿÿÿ8üŸåÙÌ1J$05f31cb1-c346-428a-bc98-1aead11139de
 „
-java:S1226"AIntroduce a new variable instead of reusing the parameter "text".(©ÒÈ 8¶ŒÁµÌ1J$d0710f4f-9368-4c29-9180-490f3917efb4
-	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï´ÖÓ8îç¾µÌ1J$49d72a8e-d6ef-4372-8cc3-5d0a25f2db0e
+java:S1226"AIntroduce a new variable instead of reusing the parameter "text".(©ÒÈ 8ıŸåÙÌ1J$183c0f64-719c-455f-8e54-275608d43d6c
+	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï´ÖÓ8§ åÙÌ1J$236c78ff-16d2-49c2-9e40-41ab6d63697b
 ~
-java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8å¼µÌ1J$8ab85706-8ece-4ba6-9481-2410e8abc190
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8ı‹˜ßÌ1J$84fc3c04-222b-4613-8cb2-c3b305520986

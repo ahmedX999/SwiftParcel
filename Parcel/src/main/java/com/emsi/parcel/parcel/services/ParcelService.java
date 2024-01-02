@@ -32,7 +32,7 @@ public class ParcelService {
         parcelRepository.deleteById(aLong);
     }
 
-    public Optional<Parcel> getParcelById(Long aLong) {
+    public Optional <Parcel> getParcelById(Long aLong) {
         return parcelRepository.findById(aLong);
     }
 
@@ -53,5 +53,10 @@ public class ParcelService {
         }
     }
 
+    public void updateEmailSentStatus(String trackingNumber) {
+     Parcel parcel = parcelRepository.findByTrackingNumber(trackingNumber);
+     parcel.setEmailSent(true);
+     parcelRepository.save(parcel);
 
+    }
 }

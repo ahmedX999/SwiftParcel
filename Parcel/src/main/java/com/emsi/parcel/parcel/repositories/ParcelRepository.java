@@ -9,4 +9,5 @@ public interface ParcelRepository extends JpaRepository<Parcel,Long> {
 
     Parcel findByTrackingNumber(String trackingNumber);
 
+
 }

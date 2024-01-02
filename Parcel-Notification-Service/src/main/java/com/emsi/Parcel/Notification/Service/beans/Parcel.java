@@ -1,12 +1,12 @@
 package com.emsi.Parcel.Notification.Service.beans;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class Parcel {
 
     private Long id;

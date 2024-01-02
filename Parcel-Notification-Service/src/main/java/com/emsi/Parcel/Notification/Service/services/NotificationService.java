@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 
 import java.util.List;
@@ -19,7 +21,7 @@ public class NotificationService {
 
     private final ParcelServiceClient parcelServiceClient;
     private final NotificationRepository notificationRepository;
-
+    private final EmailService emailService;
 
 
 
@@ -52,6 +54,34 @@ public class NotificationService {
         return parcelServiceClient.getAllParcels();
     }
 
+
+    public void updateEmailSentStatus(String trackingNumber) {
+        parcelServiceClient.updateEmailSentStatus(trackingNumber);
+    }
+
+    public String sendEmail(Long parcelId) {
+        Parcel parcel = parcelServiceClient.getParcelById(parcelId);
+        String trackingNumber = parcel.getTrackingNumber();
+        // check if status is Done
+        if(parcel.getStatus().equals("Done")){
+
+
+                if(!parcel.isEmailSent()){
+                     emailService.sendEmail(parcel.getUser().getEmail(), "Parcel Delivered Successfully", "Your parcel with tracking number " + parcel.getTrackingNumber() + " has been delivered successfully!");
+                     updateEmailSentStatus(trackingNumber);
+                     return "Email sent successfully";
+                }
+                else{
+                      return "The email is already sent";
+                }
+
+        }
+
+        else{
+         return "The parcel is not delivred yet";
+        }
+
+        }
 
 
 }

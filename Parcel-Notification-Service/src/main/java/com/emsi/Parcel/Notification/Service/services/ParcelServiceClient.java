@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,5 +19,8 @@ public interface ParcelServiceClient {
     List<Parcel> getAllParcels();
 
     @GetMapping("/api/parcels/{parcelId}")
-    Optional<Parcel> getParcelById(@PathVariable Long parcelId);
+    Parcel getParcelById(@PathVariable Long parcelId);
+
+    @PostMapping("/api/parcels/emailSent/{trackingNumber}")
+    void updateEmailSentStatus(@PathVariable String trackingNumber);
 }

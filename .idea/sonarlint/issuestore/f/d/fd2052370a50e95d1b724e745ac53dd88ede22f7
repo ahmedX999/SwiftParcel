@@ -1,6 +1,11 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³ôÖ¤ÿÿÿÿÿ8¦ô”µÌ1J$86cc7b3c-0034-450f-8af9-42129a7dcfb8
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³ôÖ¤ÿÿÿÿÿ8Ã´ÊÙÌ1J$799ec4b1-9b68-44ca-be0d-022b03460b51
 Š
-java:S1128"GRemove this unused import 'org.springframework.mail.SimpleMailMessage'.(€·ÊŒ8áŠ§µÌ1J$56a040e1-0f96-4533-bc7e-dfc8d78b8587
+java:S1128"GRemove this unused import 'org.springframework.mail.SimpleMailMessage'.(€·ÊŒ8‹ŒáÙÌ1J$7bde6e9c-edf2-4a67-a9f4-3e5a50079ef5
 
-java:S1128"MRemove this unused import 'org.springframework.mail.javamail.JavaMailSender'.(ÕÃ›8áŠ§µÌ1J$3c503908-32f2-4d62-9177-157be4dcc292
+java:S1128"MRemove this unused import 'org.springframework.mail.javamail.JavaMailSender'.(ÕÃ›8ŒŒáÙÌ1J$d32f91ff-3d86-47c6-af76-0e60aec9aa44
+™
+java:S1128
+"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿ8†‹ˆáÌ1J$0fae4762-805e-4ab6-bae5-3c8be7f914f4
+˜
+java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.PostMapping'.(äƒà°ùÿÿÿÿ8£“‡áÌ1J$7510ba25-37dd-4e97-98f2-0d60a0368d62
