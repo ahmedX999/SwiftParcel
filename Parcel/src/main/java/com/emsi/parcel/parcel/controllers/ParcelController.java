@@ -3,11 +3,13 @@ package com.emsi.parcel.parcel.controllers;
 import com.emsi.parcel.parcel.entities.Parcel;
 import com.emsi.parcel.parcel.services.ParcelService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/parcels")
@@ -30,6 +32,11 @@ public class ParcelController {
     @GetMapping("findByTrackingNumber/{trackingNumber}")
     public Parcel findByTrackingNumber(@PathVariable String trackingNumber) {
         return parcelService.findByTrackingNumber(trackingNumber);
+    }
+
+    @GetMapping("{id}")
+    public Optional<Parcel> getParcelById(@PathVariable Long id) {
+        return parcelService.getParcelById(id);
     }
     @DeleteMapping("{id}")
     public void deleteById(@PathVariable Long id) {

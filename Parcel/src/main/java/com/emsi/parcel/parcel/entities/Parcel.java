@@ -23,6 +23,7 @@ public class Parcel {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+    private boolean isEmailSent=false;
 
     @OneToMany(mappedBy = "parcel", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Location> locationHistory;

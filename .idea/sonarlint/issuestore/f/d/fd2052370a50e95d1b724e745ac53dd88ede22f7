@@ -1,0 +1,6 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³ôÖ¤ÿÿÿÿÿ8¦ô”µÌ1J$86cc7b3c-0034-450f-8af9-42129a7dcfb8
+Š
+java:S1128"GRemove this unused import 'org.springframework.mail.SimpleMailMessage'.(€·ÊŒ8áŠ§µÌ1J$56a040e1-0f96-4533-bc7e-dfc8d78b8587
+
+java:S1128"MRemove this unused import 'org.springframework.mail.javamail.JavaMailSender'.(ÕÃ›8áŠ§µÌ1J$3c503908-32f2-4d62-9177-157be4dcc292
